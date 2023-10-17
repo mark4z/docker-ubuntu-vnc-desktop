@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  lxde:
+    image: dorowu/ubuntu-desktop-lxde-vnc
+    container_name: ubuntu-desktop-lxde-vnc
+    ports:
+      - "6080:80"
+    volumes:
+      - /dev/shm:/dev/shm
